@@ -9,8 +9,17 @@ Mnum_1 = ReplyKeyboardMarkup().add(btnnum_1).add(btnnum_7)
 btnnum2 = KeyboardButton("/Exchange_rates📈")
 btnnum3 = KeyboardButton("/📰_News")
 btnnum4 = KeyboardButton("/⚙_Settings")
-btnnum21 = KeyboardButton("/Stock")
-Mnum_2 = ReplyKeyboardMarkup(resize_keyboard=True).add(btnnum2).add(btnnum3).add(btnnum21).add(btnnum4)
+btnnum21 = KeyboardButton("/Alerts")
+Mnum_2 = ReplyKeyboardMarkup(resize_keyboard=True).add(btnnum2).add(btnnum21).add(btnnum3).add(btnnum4)
+
+DeleteAl_N = KeyboardButton("/Delete_Name")
+ReplaceAl_N = KeyboardButton("/Replace_Name")
+DeleteAl_Val = KeyboardButton("/Delete_Value")
+ReplaceAl_Val = KeyboardButton("/Replace_Value")
+
+Name_Bt = ReplyKeyboardMarkup(resize_keyboard=True).add(ReplaceAl_N).add(DeleteAl_N)
+Value_Bt = ReplyKeyboardMarkup(resize_keyboard=True).add(ReplaceAl_Val).add(DeleteAl_Val)
+
 
 btnnum6 = KeyboardButton("/📈_Crypto")
 btnnum14 = KeyboardButton("/💵_Currencies")
